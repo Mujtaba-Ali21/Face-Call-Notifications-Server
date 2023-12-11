@@ -34,5 +34,5 @@ app.post('/send-notification', ( req, res ) => {
 })
 
 app.listen(port, () => {
-  console.log(`Face Call listening on port ${port}`)
+  console.log(`Face Call listening on Port ${port}`)
 })
