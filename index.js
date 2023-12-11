@@ -15,11 +15,11 @@ app.use(express.json())
 
 app.post('/send-notification', ( req, res ) => {
   const { notificationData } = req.body;
-
+  
   if (notificationData) {
     admin
       .messaging()
-      .send(notificationData)
+      .send(notificationData, notificationData.data)
       .then(response => {
         console.log('Notification sent successfully:', response);
         res.status(200).json({ message: 'Notification sent successfully' });
@@ -34,5 +34,5 @@ app.post('/send-notification', ( req, res ) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Face Call listening on port ${port}`)
 })
