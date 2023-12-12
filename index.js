@@ -13,10 +13,12 @@ admin.initializeApp({
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send('Notification EndPoint For Face Call!')
+})
+
 app.post('/send-notification', ( req, res ) => {
   const { notificationData } = req.body;
- 
-  console.log(notificationData);
 
   if (notificationData) {
     admin
