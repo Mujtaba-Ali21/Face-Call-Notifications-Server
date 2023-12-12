@@ -29,7 +29,7 @@ app.post('/send-notification', ( req, res ) => {
         res.status(200).json({ message: 'Notification sent successfully' });
       })
       .catch(error => {
-        console.error('Error sending notification:', error);
+        console.error('Error sending Notification:', error);
         res.status(500).json({ error: 'Error sending Notification' });
       });
   } else {
