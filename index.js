@@ -19,7 +19,7 @@ app.post('/send-notification', ( req, res ) => {
   if (notificationData) {
     admin
       .messaging()
-      .send(notificationData, notificationData.data)
+      .send(notificationData)
       .then(response => {
         console.log('Notification sent successfully:', response);
         res.status(200).json({ message: 'Notification sent successfully' });
