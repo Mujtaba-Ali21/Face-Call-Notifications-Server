@@ -33,7 +33,7 @@ app.post('/send-notification', ( req, res ) => {
         res.status(500).json({ error: 'Error sending notification' });
       });
   } else {
-    res.status(400).json({ error: 'Invalid notification data' });
+    res.status(400).json({ error: 'Invalid notification Data' });
   }
 })
 
