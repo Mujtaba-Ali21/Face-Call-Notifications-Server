@@ -15,7 +15,9 @@ app.use(express.json())
 
 app.post('/send-notification', ( req, res ) => {
   const { notificationData } = req.body;
-  
+ 
+  console.log(notificationData);
+
   if (notificationData) {
     admin
       .messaging()
