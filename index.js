@@ -30,7 +30,7 @@ app.post('/send-notification', ( req, res ) => {
       })
       .catch(error => {
         console.error('Error sending notification:', error);
-        res.status(500).json({ error: 'Error sending notification' });
+        res.status(500).json({ error: 'Error sending Notification' });
       });
   } else {
     res.status(400).json({ error: 'Invalid notification Data' });
