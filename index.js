@@ -14,7 +14,7 @@ admin.initializeApp({
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send('Notification EndPoint For Face Call!')
+  res.send('Notification End-Point For Face Call!')
 })
 
 app.post('/send-notification', ( req, res ) => {
